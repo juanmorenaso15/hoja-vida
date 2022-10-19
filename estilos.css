@@ -1,0 +1,288 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight:bold;
+    padding: 10px 25px;
+    border-radius: 9px;
+    border: 2px solid rgb(128, 119, 212);
+    box-shadow: 2px 2px 10px rgb(128, 119, 212);
+    color: rgb(83, 41, 199);
+    background-color: rgb(157, 149, 221);
+}
+button:hover{
+    background-color: rgb(130, 107, 221);
+}
+.contenido{
+    max-width: 1200px;
+    margin: auto;
+}
+.color-acento{color: rgb(138, 130, 204);}
+header{
+    background-color: rgb(243, 247, 249);
+}
+header .logo{
+    margin: 10;
+    padding: 20px 20px ;
+    font-weight: bold;
+    color: rgb(114, 114, 209);
+    font-size: 1.6em;
+}
+header .contenido{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px ;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration:none ;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: rgb(114, 114, 209);
+} 
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: rgb(237, 222, 222);
+}
+#redcell .contenido{
+    text-align: center;
+    padding: 200px 12px;
+}
+#nuestros-productos{
+    background-color: rgb(78, 76, 151);
+    color: white;
+    text-align: center;
+}
+#nuestros-productos .contenido{
+padding: 100px 0px;
+}
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#nuestros-productos p{
+    display: none;
+}
+#nuestros-productos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("k.jpg");
+}
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("p.png");
+}
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("g.jpg");
+}
+#caracteristicas .contenido{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+#miraya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(78, 76, 151) ;
+    color: white;
+    height: 80vh;
+}
+#miraya h2{
+    font-size: 3em;
+}
+#miraya button{
+    font-size: 3vw;
+}
+footer{
+    background-color: rgb(229, 208, 208);
+
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(105, 105, 95);
+}
+footer .contenido{
+height: 150px;
+display: flex;
+justify-content:center ;
+align-items: flex-end;
+}
+@media (min-width: 720px){
+
+    header{
+         position: fixed;
+         width: 100%;
+    }
+    header .contenido{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #redcell .contenido{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #redcell .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #redcell h2{
+        margin-top: 0px;
+    }
+    #redcell .img-contenido{
+        background-image:url("t.jpg");
+        background-size: cover;
+        background-position: center center;
+        width: 400px;
+    }
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px ;
+    }
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+    #nuestros-productos .carta{
+        padding: 50px;
+        background-size: 100% 110px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(67, 67, 161);
+        box-shadow: 2px 2px 10px rgb(33, 33, 167);
+    }
+    .carta:first-child{
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url("kk.jpg");
+    }
+    .carta:nth-child(2){
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url("pp.png");
+    }
+    .carta:nth-child(3){
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url("gg.png");
+    }
+    #caracteristicas{
+        background-image: url("v.png");
+        background-repeat: no-repeat;
+        background-size: 470px 270px;
+        background-position: calc(100vw - 500px) 120px ;
+    }
+    #caracteristicas .contenido{
+        text-align: initial;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+    #miraya h2{
+        font-size: 5em;
+    }
+    #miraya button{
+        font-size: 2em;
+    }
+    footer .contenido{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
